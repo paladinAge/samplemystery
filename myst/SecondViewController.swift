@@ -13,13 +13,15 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
     
-    var param = ""
+    @IBOutlet weak var answer1: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(white: 0, alpha: 1)
         
-        label3.text = param
+        let answer1: UIImage = UIImage(named: "answer1.png")!
+        // 画面に画像を設定する
     }
     
     override func didReceiveMemoryWarning() {

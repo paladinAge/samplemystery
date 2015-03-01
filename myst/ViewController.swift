@@ -10,15 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var label1: UILabel!
-    
-    
-    @IBOutlet weak var textfield1: UITextField!
-    
-    @IBOutlet weak var crossword: UIImageView!
-    
+    @IBOutlet weak var question1: UIImageView!
+
     @IBOutlet weak var errorMessage: UILabel!
     
+    @IBOutlet weak var answer1: UITextField!
     @IBAction func next(sender: AnyObject) {
     }
     
@@ -26,10 +22,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // 画像を読み込み
-        let myImage: UIImage = UIImage(named: "crossword.gif")!
+        self.view.backgroundColor = UIColor(white: 0, alpha: 1)
+        let questionImage1: UIImage = UIImage(named: "question1.png")!
+        
+
         // 画面に画像を設定する
         errorMessage.text = ""
-        crossword.image = myImage
+        question1.image = questionImage1
         
     }
 
@@ -44,11 +43,11 @@ class ViewController: UIViewController {
     
     override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
         errorMessage.textColor = UIColor.redColor()
-        if textfield1.text.isEmpty {
+        if answer1.text.isEmpty {
             errorMessage.text = "答えを入力してください"
             return false
         }
-        if textfield1.text != "twilight" {
+        if answer1.text != "針" {
             errorMessage.text = "不正解！！！"
             return false
         }
@@ -56,9 +55,8 @@ class ViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
-        println(textfield1.text)
+        println(answer1.text)
         var secondViewController:SecondViewController = segue.destinationViewController as SecondViewController
-        secondViewController.param = textfield1.text
     }
 
 }

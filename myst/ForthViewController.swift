@@ -17,7 +17,7 @@ class ForthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        self.view.backgroundColor = UIColor(white: 0, alpha: 1)
     }
     
     override func didReceiveMemoryWarning() {

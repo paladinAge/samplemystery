@@ -10,16 +10,21 @@ import UIKit
 
 class TopViewController: UIViewController {
     
-    @IBOutlet weak var image: UIImageView!
 
+    @IBOutlet weak var opening: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //背景を黒にする
+        self.view.backgroundColor  = UIColor(white: 0, alpha: 1)
+        
         // 画像を読み込み
-        let myImage: UIImage = UIImage(named: "crossword.gif")!
-        // 画面に画像を設定する
-        image.image = myImage
+        let openingImage: UIImage = UIImage(named: "opening.png")!
+        
+        // 画面の画像領域に画像を設定する
+        opening.image = openingImage
         
     }
     

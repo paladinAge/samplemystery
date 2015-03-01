@@ -9,11 +9,28 @@
 import Foundation
 
 class Mystery {
-    var mystesyImageFileName:String
-    var correctAnswer:String
+    var mystesyImageFileName:String {
+        
+        get {
+            return self.mystesyImageFileName
+        }
+        set {
+            println(newValue)
+            self.mystesyImageFileName = newValue
+        }
+    }
+    var correctAnswer:String {
+        get {
+            return self.correctAnswer
+        }
+        set {
+            self.correctAnswer = newValue
+        }
+    }
     
     init(mysteryImage:String, answer:String) {
-        mystesyImageFileName = mysteryImage
-        correctAnswer = answer
+        self.mystesyImageFileName = mysteryImage
+        self.correctAnswer = answer
     }
+    
 }
