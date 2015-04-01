@@ -8,10 +8,10 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class FifthViewController: UIViewController {
     
     @IBOutlet weak var answer1: UIImageView!
-
+    
     @IBOutlet weak var question2: UIImageView!
     
     @IBOutlet weak var answer2: UITextField!
@@ -62,8 +62,8 @@ class SecondViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
         println(answer2.text)
-        var secondViewController:ThirdViewController = segue.destinationViewController as ThirdViewController
+        var secondViewController:FifthViewController = segue.destinationViewController as FifthViewController
     }
-
+    
     
 }
