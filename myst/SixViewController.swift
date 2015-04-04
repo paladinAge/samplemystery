@@ -8,33 +8,33 @@
 
 import UIKit
 
-class ForthViewController: UIViewController {
+class SixViewController: UIViewController {
     
-    
-    @IBOutlet weak var answer3: UIImageView!
 
-    @IBOutlet weak var question4: UIImageView!
+    @IBOutlet weak var answer5: UIImageView!
+    
+    @IBOutlet weak var question6: UIImageView!
+    
     @IBOutlet weak var errorMessage: UILabel!
     
-    @IBOutlet weak var answer4: UITextField!
-    
+    @IBOutlet weak var answer6: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = UIColor(white: 0, alpha: 1)
         
-        let answer3: UIImage = UIImage(named: "answer3.png")!
+        let answer4: UIImage = UIImage(named: "answer4.png")!
         // 画面に画像を設定する
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // 画像を読み込み
         self.view.backgroundColor = UIColor(white: 0, alpha: 1)
-        let questionImage4: UIImage = UIImage(named: "question4.png")!
+        let questionImage6: UIImage = UIImage(named: "question6.png")!
         
         
         // 画面に画像を設定する
         errorMessage.text = ""
-        question4.image = questionImage4
+        question6.image = questionImage6
         
     }
     
@@ -42,18 +42,18 @@ class ForthViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     @IBAction func unwindToTop(segue: UIStoryboardSegue) {
         errorMessage.text = ""
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
         errorMessage.textColor = UIColor.redColor()
-        if answer4.text.isEmpty {
+        if answer6.text.isEmpty {
             errorMessage.text = "答えを入力してください"
             return false
         }
-        if answer4.text != "海" {
+        if answer6.text != "囚人" {
             errorMessage.text = "不正解！！！"
             return false
         }
@@ -61,8 +61,8 @@ class ForthViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
-        println(answer4.text)
-        var secondViewController:FifthViewController = segue.destinationViewController as FifthViewController
+        println(answer6.text)
+        var secondViewController:LastViewController = segue.destinationViewController as LastViewController
     }
     
     

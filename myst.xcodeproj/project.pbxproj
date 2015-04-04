@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2022EC6C1ACC1BE20073E343 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2022EC6B1ACC1BE20073E343 /* FifthViewController.swift */; };
+		2022EC6F1ACFBA050073E343 /* SixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2022EC6E1ACFBA050073E343 /* SixViewController.swift */; };
+		2022EC711ACFBB000073E343 /* LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2022EC701ACFBB000073E343 /* LastViewController.swift */; };
+		2022EC731AD025B30073E343 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2022EC721AD025B30073E343 /* Social.framework */; };
 		20319E2E1A933E1D0094EFF2 /* crossword.gif in Resources */ = {isa = PBXBuildFile; fileRef = 20319E2D1A933E1D0094EFF2 /* crossword.gif */; };
 		20319E301A94ACD10094EFF2 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20319E2F1A94ACD10094EFF2 /* ThirdViewController.swift */; };
 		20319E321A94ACE30094EFF2 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20319E311A94ACE30094EFF2 /* ForthViewController.swift */; };
@@ -25,7 +28,7 @@
 		20A6F3581AA2F70500A56692 /* question3.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A6F34A1AA2F70500A56692 /* question3.png */; };
 		20A6F3591AA2F70500A56692 /* question5.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A6F34B1AA2F70500A56692 /* question5.png */; };
 		20A6F35A1AA2F70500A56692 /* question6.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A6F34C1AA2F70500A56692 /* question6.png */; };
-		20A6F35B1AA2F70500A56692 /* questiton4.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A6F34D1AA2F70500A56692 /* questiton4.png */; };
+		20A6F35B1AA2F70500A56692 /* question4.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A6F34D1AA2F70500A56692 /* question4.png */; };
 		20F088EA1A91EB71008C1C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F088E91A91EB71008C1C55 /* AppDelegate.swift */; };
 		20F088EC1A91EB71008C1C55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F088EB1A91EB71008C1C55 /* ViewController.swift */; };
 		20F088EF1A91EB71008C1C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F088ED1A91EB71008C1C55 /* Main.storyboard */; };
@@ -48,6 +51,10 @@
 
 /* Begin PBXFileReference section */
 		2022EC6B1ACC1BE20073E343 /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		2022EC6D1ACFB4900073E343 /* aaa2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = aaa2.m4a; sourceTree = "<group>"; };
+		2022EC6E1ACFBA050073E343 /* SixViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixViewController.swift; sourceTree = "<group>"; };
+		2022EC701ACFBB000073E343 /* LastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastViewController.swift; sourceTree = "<group>"; };
+		2022EC721AD025B30073E343 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		20319E2D1A933E1D0094EFF2 /* crossword.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = crossword.gif; sourceTree = "<group>"; };
 		20319E2F1A94ACD10094EFF2 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		20319E311A94ACE30094EFF2 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +72,7 @@
 		20A6F34A1AA2F70500A56692 /* question3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question3.png; sourceTree = "<group>"; };
 		20A6F34B1AA2F70500A56692 /* question5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question5.png; sourceTree = "<group>"; };
 		20A6F34C1AA2F70500A56692 /* question6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question6.png; sourceTree = "<group>"; };
-		20A6F34D1AA2F70500A56692 /* questiton4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = questiton4.png; sourceTree = "<group>"; };
+		20A6F34D1AA2F70500A56692 /* question4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question4.png; sourceTree = "<group>"; };
 		20F088E41A91EB71008C1C55 /* myst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F088E81A91EB71008C1C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F088E91A91EB71008C1C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2022EC731AD025B30073E343 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +109,7 @@
 		20F088DB1A91EB71008C1C55 = {
 			isa = PBXGroup;
 			children = (
+				2022EC721AD025B30073E343 /* Social.framework */,
 				20F088E61A91EB71008C1C55 /* myst */,
 				20F088FC1A91EB71008C1C55 /* mystTests */,
 				20F088E51A91EB71008C1C55 /* Products */,
@@ -127,6 +136,8 @@
 				20319E2F1A94ACD10094EFF2 /* ThirdViewController.swift */,
 				20319E311A94ACE30094EFF2 /* ForthViewController.swift */,
 				2022EC6B1ACC1BE20073E343 /* FifthViewController.swift */,
+				2022EC6E1ACFBA050073E343 /* SixViewController.swift */,
+				2022EC701ACFBB000073E343 /* LastViewController.swift */,
 				20F088ED1A91EB71008C1C55 /* Main.storyboard */,
 				20F088F01A91EB71008C1C55 /* Images.xcassets */,
 				20F088F21A91EB71008C1C55 /* LaunchScreen.xib */,
@@ -138,6 +149,7 @@
 		20F088E71A91EB71008C1C55 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2022EC6D1ACFB4900073E343 /* aaa2.m4a */,
 				20A6F3401AA2F70500A56692 /* answer1.png */,
 				20A6F3411AA2F70500A56692 /* answer2.png */,
 				20A6F3421AA2F70500A56692 /* answer3.png */,
@@ -149,9 +161,9 @@
 				20A6F3481AA2F70500A56692 /* question2_answer.png */,
 				20A6F3491AA2F70500A56692 /* question2.png */,
 				20A6F34A1AA2F70500A56692 /* question3.png */,
+				20A6F34D1AA2F70500A56692 /* question4.png */,
 				20A6F34B1AA2F70500A56692 /* question5.png */,
 				20A6F34C1AA2F70500A56692 /* question6.png */,
-				20A6F34D1AA2F70500A56692 /* questiton4.png */,
 				20319E2D1A933E1D0094EFF2 /* crossword.gif */,
 				20F088E81A91EB71008C1C55 /* Info.plist */,
 			);
@@ -266,7 +278,7 @@
 				20A6F3561AA2F70500A56692 /* question2_answer.png in Resources */,
 				20A6F3521AA2F70500A56692 /* answer5.png in Resources */,
 				20F088F11A91EB71008C1C55 /* Images.xcassets in Resources */,
-				20A6F35B1AA2F70500A56692 /* questiton4.png in Resources */,
+				20A6F35B1AA2F70500A56692 /* question4.png in Resources */,
 				20A6F3541AA2F70500A56692 /* opening.png in Resources */,
 				20A6F35A1AA2F70500A56692 /* question6.png in Resources */,
 				20A6F3501AA2F70500A56692 /* answer3.png in Resources */,
@@ -290,11 +302,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2022EC6F1ACFBA050073E343 /* SixViewController.swift in Sources */,
 				20319E341A94AD630094EFF2 /* TopViewController.swift in Sources */,
 				20F0890A1A91EC2C008C1C55 /* SecondViewController.swift in Sources */,
 				20F088EC1A91EB71008C1C55 /* ViewController.swift in Sources */,
 				20319E301A94ACD10094EFF2 /* ThirdViewController.swift in Sources */,
 				2022EC6C1ACC1BE20073E343 /* FifthViewController.swift in Sources */,
+				2022EC711ACFBB000073E343 /* LastViewController.swift in Sources */,
 				20F2C5A61A99CCFE007A6F66 /* Mystery.swift in Sources */,
 				20F088EA1A91EB71008C1C55 /* AppDelegate.swift in Sources */,
 				20319E321A94ACE30094EFF2 /* ForthViewController.swift in Sources */,

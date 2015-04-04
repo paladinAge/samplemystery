@@ -11,9 +11,9 @@ import UIKit
 class ThirdViewController: UIViewController {
     
 
-    @IBOutlet weak var answer2: UIImageView!
     @IBOutlet weak var question3: UIImageView!
     
+    @IBOutlet weak var answer2: UIImageView!
     @IBOutlet weak var errorMessage: UILabel!
     
     @IBOutlet weak var answer3: UITextField!

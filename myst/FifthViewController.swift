@@ -10,31 +10,33 @@ import UIKit
 
 class FifthViewController: UIViewController {
     
-    @IBOutlet weak var answer1: UIImageView!
+
+    @IBOutlet weak var answer4: UIImageView!
     
-    @IBOutlet weak var question2: UIImageView!
-    
-    @IBOutlet weak var answer2: UITextField!
+    @IBOutlet weak var question5: UIImageView!
     
     @IBOutlet weak var errorMessage: UILabel!
+    
+    
+    @IBOutlet weak var answer5: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = UIColor(white: 0, alpha: 1)
         
-        let answer1: UIImage = UIImage(named: "answer1.png")!
+        let answer4: UIImage = UIImage(named: "answer4.png")!
         // 画面に画像を設定する
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // 画像を読み込み
         self.view.backgroundColor = UIColor(white: 0, alpha: 1)
-        let questionImage2: UIImage = UIImage(named: "question2.png")!
+        let questionImage5: UIImage = UIImage(named: "question5.png")!
         
         
         // 画面に画像を設定する
         errorMessage.text = ""
-        question2.image = questionImage2
+        question5.image = questionImage5
         
     }
     
@@ -49,11 +51,11 @@ class FifthViewController: UIViewController {
     
     override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
         errorMessage.textColor = UIColor.redColor()
-        if answer2.text.isEmpty {
+        if answer5.text.isEmpty {
             errorMessage.text = "答えを入力してください"
             return false
         }
-        if answer2.text != "ラーメン" {
+        if answer5.text != "極寒" {
             errorMessage.text = "不正解！！！"
             return false
         }
@@ -61,8 +63,8 @@ class FifthViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
-        println(answer2.text)
-        var secondViewController:FifthViewController = segue.destinationViewController as FifthViewController
+        println(answer5.text)
+        var secondViewController:SixViewController = segue.destinationViewController as SixViewController
     }
     
     

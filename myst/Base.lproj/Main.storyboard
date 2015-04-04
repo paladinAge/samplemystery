@@ -146,7 +146,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="answer1.png" translatesAutoresizingMaskIntoConstraints="NO" id="k9T-8O-Tt0">
                                 <rect key="frame" x="16" y="37" width="288" height="215"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Le7-jR-eb7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="question2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Le7-jR-eb7">
                                 <rect key="frame" x="13" y="255" width="288" height="149"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yob-Hb-jna">
@@ -184,7 +184,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GHb-yK-5Ep">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="question3.png" translatesAutoresizingMaskIntoConstraints="NO" id="GHb-yK-5Ep">
                                 <rect key="frame" x="16" y="247" width="288" height="156"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f75-X5-HUC">
@@ -193,7 +193,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hRU-3i-YiY" kind="custom" id="SM9-Ws-Mpu"/>
+                                    <segue destination="hRU-3i-YiY" kind="custom" identifier="answer3" id="SM9-Ws-Mpu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uw4-EE-kq9">
@@ -210,7 +210,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L5O-8s-yyC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="answer2.png" translatesAutoresizingMaskIntoConstraints="NO" id="L5O-8s-yyC">
                                 <rect key="frame" x="16" y="41" width="288" height="198"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYr-cU-dfr">
@@ -225,6 +225,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
+                        <outlet property="answer2" destination="L5O-8s-yyC" id="RqR-PC-gMf"/>
                         <outlet property="answer3" destination="BUY-EM-AuA" id="uwk-Sw-fDr"/>
                         <outlet property="errorMessage" destination="DYr-cU-dfr" id="3MP-ne-L7Q"/>
                         <outlet property="question3" destination="GHb-yK-5Ep" id="e6f-Sm-mzx"/>
@@ -267,10 +268,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iRO-bz-QO8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="answer4.png" translatesAutoresizingMaskIntoConstraints="NO" id="iRO-bz-QO8">
                                 <rect key="frame" x="16" y="50" width="288" height="189"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zq4-RY-EhJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="question4.png" translatesAutoresizingMaskIntoConstraints="NO" id="zq4-RY-EhJ">
                                 <rect key="frame" x="16" y="247" width="288" height="149"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acz-Ka-Rka">
@@ -279,7 +280,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mZi-Z6-i3b" kind="custom" id="wsB-ZG-DHY"/>
+                                    <segue destination="mZi-Z6-i3b" kind="custom" identifier="answer4" id="wsB-ZG-DHY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -287,16 +288,22 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="answer3" destination="iRO-bz-QO8" id="2te-gd-5cs"/>
+                        <outlet property="answer4" destination="wL3-Uu-f9N" id="zsN-8R-FgT"/>
+                        <outlet property="errorMessage" destination="oO4-S3-vgt" id="MzI-bo-OGs"/>
+                        <outlet property="question4" destination="zq4-RY-EhJ" id="Xss-Vz-MEG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Afc-8n-5mE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="goa-VH-mJt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1399" y="394"/>
         </scene>
-        <!--View Controller-->
+        <!--Fifth View Controller-->
         <scene sceneID="DHZ-HL-12s">
             <objects>
-                <viewController id="mZi-Z6-i3b" sceneMemberID="viewController">
+                <viewController id="mZi-Z6-i3b" customClass="FifthViewController" customModule="myst" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FIM-6l-eWU"/>
                         <viewControllerLayoutGuide type="bottom" id="fjK-FI-tp5"/>
@@ -315,6 +322,9 @@
                                 <state key="normal" title="戻る">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="VSn-3r-eFc" kind="unwind" unwindAction="unwindToTop:" id="kbH-YC-aVM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xs6-Sd-4NS">
                                 <rect key="frame" x="66" y="410" width="231" height="21"/>
@@ -322,10 +332,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vvh-tv-0bn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="answer4.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vvh-tv-0bn">
                                 <rect key="frame" x="40" y="52" width="240" height="128"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tBg-6F-CbC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="question5.png" translatesAutoresizingMaskIntoConstraints="NO" id="tBg-6F-CbC">
                                 <rect key="frame" x="48" y="237" width="240" height="128"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GC5-ex-c0F">
@@ -334,7 +344,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Qxr-gq-JT9" kind="custom" id="3eV-Px-Mue"/>
+                                    <segue destination="YEY-o0-POy" kind="custom" identifier="answer5" id="wtF-V5-AjP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -342,15 +352,86 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="answer4" destination="Vvh-tv-0bn" id="7aP-r9-QPC"/>
+                        <outlet property="answer5" destination="CU8-gG-YiI" id="Dvz-zl-GzQ"/>
+                        <outlet property="errorMessage" destination="Xs6-Sd-4NS" id="d9u-lJ-LR4"/>
+                        <outlet property="question5" destination="tBg-6F-CbC" id="sXu-VO-GjU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="euw-RT-cZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="VSn-3r-eFc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1801" y="394"/>
         </scene>
-        <!--View Controller-->
+        <!--Six View Controller-->
+        <scene sceneID="Z5L-sI-dBh">
+            <objects>
+                <viewController id="YEY-o0-POy" customClass="SixViewController" customModule="myst" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ab2-ID-7Ci"/>
+                        <viewControllerLayoutGuide type="bottom" id="F2W-wz-Khh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HD8-7g-YRf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsB-8x-cCv">
+                                <rect key="frame" x="64" y="405" width="216" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f5f-wh-bB4">
+                                <rect key="frame" x="54" y="434" width="226" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3j-aw-HD2">
+                                <rect key="frame" x="137" y="483" width="60" height="30"/>
+                                <state key="normal" title="解答する">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qxr-gq-JT9" kind="custom" identifier="answer6" id="yti-b8-8g5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0L4-E3-fLO">
+                                <rect key="frame" x="137" y="530" width="30" height="30"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3bK-nd-Fbe" kind="unwind" unwindAction="unwindToTop:" id="dmj-zy-xBw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="answer5.png" translatesAutoresizingMaskIntoConstraints="NO" id="2j3-Cw-vpy">
+                                <rect key="frame" x="40" y="51" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="question6.png" translatesAutoresizingMaskIntoConstraints="NO" id="KxI-ou-8ZF">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="answer5" destination="2j3-Cw-vpy" id="4Fg-1Z-4aM"/>
+                        <outlet property="answer6" destination="f5f-wh-bB4" id="dX3-ND-8fQ"/>
+                        <outlet property="errorMessage" destination="YsB-8x-cCv" id="GJl-aO-zUu"/>
+                        <outlet property="question6" destination="KxI-ou-8ZF" id="41g-nC-Pyz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xm8-Yu-DQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3bK-nd-Fbe" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2196" y="394"/>
+        </scene>
+        <!--Last View Controller-->
         <scene sceneID="bL3-Vp-Lob">
             <objects>
-                <viewController id="Qxr-gq-JT9" sceneMemberID="viewController">
+                <viewController id="Qxr-gq-JT9" customClass="LastViewController" customModule="myst" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oSD-hs-DfV"/>
                         <viewControllerLayoutGuide type="bottom" id="vP9-7Z-6OU"/>
@@ -360,19 +441,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcb-mO-CZQ">
-                                <rect key="frame" x="70" y="162" width="180" height="30"/>
+                                <rect key="frame" x="70" y="201" width="180" height="30"/>
                                 <state key="normal" title="クリアしたことをつぶやく">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="解説文" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CT6-KV-HKF">
-                                <rect key="frame" x="70" y="64" width="163" height="67"/>
+                                <rect key="frame" x="70" y="233" width="218" height="159"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mXn-sw-ST8">
-                                <rect key="frame" x="40" y="255" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="answer6.png" translatesAutoresizingMaskIntoConstraints="NO" id="mXn-sw-ST8">
+                                <rect key="frame" x="40" y="58" width="240" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="エピローグ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFd-gk-X9z">
                                 <rect key="frame" x="109" y="20" width="85" height="21"/>
@@ -380,30 +461,36 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlO-pu-bIh">
-                                <rect key="frame" x="136" y="530" width="30" height="30"/>
-                                <state key="normal" title="戻る">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="eF2-hV-8du" kind="unwind" unwindAction="unwindToTop:" id="BS6-3g-dxi"/>
-                                </connections>
-                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WdA-C8-FG2">
+                                <rect key="frame" x="40" y="340" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="webView" destination="WdA-C8-FG2" id="iM8-kh-kYa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcC-gK-Y7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="eF2-hV-8du" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2179" y="394"/>
+            <point key="canvasLocation" x="2575" y="394"/>
         </scene>
     </scenes>
     <resources>
         <image name="answer1.png" width="1016" height="994"/>
+        <image name="answer2.png" width="1016" height="994"/>
+        <image name="answer4.png" width="1016" height="994"/>
+        <image name="answer5.png" width="1016" height="994"/>
+        <image name="answer6.png" width="1016" height="1086"/>
         <image name="opening.png" width="743" height="468"/>
         <image name="question1.png" width="1016" height="1380"/>
+        <image name="question2.png" width="1016" height="948"/>
+        <image name="question3.png" width="1016" height="940"/>
+        <image name="question4.png" width="1016" height="940"/>
+        <image name="question5.png" width="1016" height="945"/>
+        <image name="question6.png" width="1016" height="941"/>
     </resources>
 </document>
