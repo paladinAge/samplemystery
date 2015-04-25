@@ -12,7 +12,6 @@ import Social
 
 class LastViewController: UIViewController{
     
-    @IBOutlet weak var twitter: UIButton!
     @IBOutlet weak var webView: UIWebView!
 
     @IBAction func twitter(sender: AnyObject) {
@@ -45,9 +44,9 @@ class LastViewController: UIViewController{
         self.view.backgroundColor = UIColor(white: 0, alpha: 1)
         
         
-        var url = NSURL(string: self.entry["link"] as String)!
-        var request = NSURLRequest(URL: url)
-        webView.loadRequest(request)
+//        var url = NSURL(string: self.entry["link"] as String)!
+//        var request = NSURLRequest(URL: url)
+//        webView.loadRequest(request)
     }
     
     override func didReceiveMemoryWarning() {

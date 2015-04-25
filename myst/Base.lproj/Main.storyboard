@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uVH-I2-ZFN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uVH-I2-ZFN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,10 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="question1.png" translatesAutoresizingMaskIntoConstraints="NO" id="OeR-eT-ENA">
-                                <rect key="frame" x="16" y="38" width="288" height="371"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question1.png" translatesAutoresizingMaskIntoConstraints="NO" id="OeR-eT-ENA">
+                                <rect key="frame" x="8" y="38" width="304" height="371"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="371" id="uPH-MK-Z8e"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yr-Dm-u4v">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yr-Dm-u4v">
                                 <rect key="frame" x="130" y="482" width="60" height="30"/>
                                 <state key="normal" title="解答する">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,28 +38,37 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJ1-wR-gV2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJ1-wR-gV2">
                                 <rect key="frame" x="43" y="417" width="216" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ip5-Za-a9z">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ip5-Za-a9z">
                                 <rect key="frame" x="76" y="444" width="169" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yaw-cm-Bwf">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yaw-cm-Bwf">
                                 <rect key="frame" x="93" y="518" width="135" height="30"/>
                                 <state key="normal" title="トップページに戻る">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gZy-CA-Z6r" kind="unwind" unwindAction="unwindToTop:" id="HoS-d5-IQn"/>
+                                    <segue destination="gZy-CA-Z6r" kind="unwind" unwindAction="unWindows:" id="rSE-BJ-k32"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OeR-eT-ENA" firstAttribute="centerX" secondItem="2yr-Dm-u4v" secondAttribute="centerX" id="C7u-bw-DqU"/>
+                            <constraint firstItem="OeR-eT-ENA" firstAttribute="centerX" secondItem="ip5-Za-a9z" secondAttribute="centerX" id="Mi5-xc-YOk"/>
+                            <constraint firstItem="OeR-eT-ENA" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="kfT-2Q-crI"/>
+                            <constraint firstItem="OeR-eT-ENA" firstAttribute="centerX" secondItem="Yaw-cm-Bwf" secondAttribute="centerX" id="l2Q-Kn-7CM"/>
+                            <constraint firstItem="OeR-eT-ENA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="18" id="n7J-lA-Fh6"/>
+                            <constraint firstItem="VJ1-wR-gV2" firstAttribute="top" secondItem="OeR-eT-ENA" secondAttribute="bottom" constant="8" symbolic="YES" id="pqM-Aw-HDm"/>
+                            <constraint firstItem="OeR-eT-ENA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-8" id="qkx-fN-m6O"/>
+                        </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
@@ -82,7 +95,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMJ-QN-NDh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMJ-QN-NDh">
                                 <rect key="frame" x="108" y="492" width="105" height="30"/>
                                 <state key="normal" title="謎解きを始める">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -91,12 +104,22 @@
                                     <segue destination="vXZ-lx-hvc" kind="custom" identifier="startMystery" id="yXz-xe-Ow9"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="opening.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mvd-55-XY3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="opening.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mvd-55-XY3">
                                 <rect key="frame" x="7" y="47" width="306" height="395"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="395" id="1Hb-ie-ItX"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mvd-55-XY3" firstAttribute="leading" secondItem="tbb-97-93C" secondAttribute="leadingMargin" constant="-9" id="3YA-vO-kzD"/>
+                            <constraint firstItem="Mvd-55-XY3" firstAttribute="top" secondItem="F8r-Mw-6Zs" secondAttribute="bottom" constant="27" id="K1r-YV-zOY"/>
+                            <constraint firstItem="eMJ-QN-NDh" firstAttribute="top" secondItem="Mvd-55-XY3" secondAttribute="bottom" constant="50" id="beV-gm-Bx8"/>
+                            <constraint firstItem="Mvd-55-XY3" firstAttribute="centerX" secondItem="tbb-97-93C" secondAttribute="centerX" id="nmi-gS-5uT"/>
+                            <constraint firstItem="Mvd-55-XY3" firstAttribute="centerX" secondItem="eMJ-QN-NDh" secondAttribute="centerX" id="uQe-8C-t53"/>
+                        </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>

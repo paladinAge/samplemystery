@@ -29,6 +29,8 @@
 		20A6F3591AA2F70500A56692 /* question5.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A6F34B1AA2F70500A56692 /* question5.png */; };
 		20A6F35A1AA2F70500A56692 /* question6.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A6F34C1AA2F70500A56692 /* question6.png */; };
 		20A6F35B1AA2F70500A56692 /* question4.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A6F34D1AA2F70500A56692 /* question4.png */; };
+		20D15FA41AEB8FB300216DEA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D15FA31AEB8FB300216DEA /* AVFoundation.framework */; };
+		20D15FA81AEBE12D00216DEA /* one.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20D15FA71AEBE12D00216DEA /* one.mp3 */; };
 		20F088EA1A91EB71008C1C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F088E91A91EB71008C1C55 /* AppDelegate.swift */; };
 		20F088EC1A91EB71008C1C55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F088EB1A91EB71008C1C55 /* ViewController.swift */; };
 		20F088EF1A91EB71008C1C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F088ED1A91EB71008C1C55 /* Main.storyboard */; };
@@ -51,7 +53,6 @@
 
 /* Begin PBXFileReference section */
 		2022EC6B1ACC1BE20073E343 /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
-		2022EC6D1ACFB4900073E343 /* aaa2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = aaa2.m4a; sourceTree = "<group>"; };
 		2022EC6E1ACFBA050073E343 /* SixViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixViewController.swift; sourceTree = "<group>"; };
 		2022EC701ACFBB000073E343 /* LastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastViewController.swift; sourceTree = "<group>"; };
 		2022EC721AD025B30073E343 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -73,6 +74,8 @@
 		20A6F34B1AA2F70500A56692 /* question5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question5.png; sourceTree = "<group>"; };
 		20A6F34C1AA2F70500A56692 /* question6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question6.png; sourceTree = "<group>"; };
 		20A6F34D1AA2F70500A56692 /* question4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question4.png; sourceTree = "<group>"; };
+		20D15FA31AEB8FB300216DEA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		20D15FA71AEBE12D00216DEA /* one.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = one.mp3; path = ../../../one.mp3; sourceTree = "<group>"; };
 		20F088E41A91EB71008C1C55 /* myst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F088E81A91EB71008C1C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F088E91A91EB71008C1C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D15FA41AEB8FB300216DEA /* AVFoundation.framework in Frameworks */,
 				2022EC731AD025B30073E343 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +113,7 @@
 		20F088DB1A91EB71008C1C55 = {
 			isa = PBXGroup;
 			children = (
+				20D15FA31AEB8FB300216DEA /* AVFoundation.framework */,
 				2022EC721AD025B30073E343 /* Social.framework */,
 				20F088E61A91EB71008C1C55 /* myst */,
 				20F088FC1A91EB71008C1C55 /* mystTests */,
@@ -128,6 +133,7 @@
 		20F088E61A91EB71008C1C55 /* myst */ = {
 			isa = PBXGroup;
 			children = (
+				20D15FA71AEBE12D00216DEA /* one.mp3 */,
 				20F088E91A91EB71008C1C55 /* AppDelegate.swift */,
 				20F2C5A51A99CCFE007A6F66 /* Mystery.swift */,
 				20319E331A94AD630094EFF2 /* TopViewController.swift */,
@@ -149,7 +155,6 @@
 		20F088E71A91EB71008C1C55 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2022EC6D1ACFB4900073E343 /* aaa2.m4a */,
 				20A6F3401AA2F70500A56692 /* answer1.png */,
 				20A6F3411AA2F70500A56692 /* answer2.png */,
 				20A6F3421AA2F70500A56692 /* answer3.png */,
@@ -275,6 +280,7 @@
 				20A6F3571AA2F70500A56692 /* question2.png in Resources */,
 				20A6F3511AA2F70500A56692 /* answer4.png in Resources */,
 				20F088F41A91EB71008C1C55 /* LaunchScreen.xib in Resources */,
+				20D15FA81AEBE12D00216DEA /* one.mp3 in Resources */,
 				20A6F3561AA2F70500A56692 /* question2_answer.png in Resources */,
 				20A6F3521AA2F70500A56692 /* answer5.png in Resources */,
 				20F088F11A91EB71008C1C55 /* Images.xcassets in Resources */,

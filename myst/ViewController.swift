@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func unwindToTop(segue: UIStoryboardSegue) {
+    @IBAction func unWindows(segue: UIStoryboardSegue) {
         errorMessage.text = ""
     }
     
